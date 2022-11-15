@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react'
 import '../styles/globals.css'
 import theme from '../theme'
 import { prismDarkTheme, prismLightTheme } from '../theme/prism'
+
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()
 

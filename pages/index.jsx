@@ -1,4 +1,4 @@
-import { Box, Grid, SlideFade } from '@chakra-ui/react'
+import { Grid, SlideFade } from '@chakra-ui/react'
 import { Layout } from '../components/layouts/layout'
 import { About } from '../components/ui/about'
 import { Bio } from '../components/ui/bio'
@@ -26,28 +26,33 @@ export default function Home({ repositories, totalContributions }) {
 }
 
 export async function getStaticProps(context) {
-  const bearer = 'Bearer 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'
+  try {
+    const bearer = `Bearer ${process.env.ENV_GITHUBTOKEN}`
 
-  const response = await fetch(
-    'https://api.github.com/users/danielcgilibert/repos',
-    {
-      method: 'GET',
-      withCredentials: true,
-      credentials: 'include',
-      headers: {
-        Authorization: bearer,
-        'Content-Type': 'application/json',
-      },
+    const response = await fetch(
+      'https://api.github.com/users/danielcgilibert/repos',
+      {
+        method: 'GET',
+        withCredentials: true,
+        credentials: 'include',
+        headers: {
+          Authorization: bearer,
+          'Content-Type': 'application/json',
+        },
+      }
+    )
+
+    const responseContribu = await fetch(
+      'https://github-contributions-api.deno.dev/danielcgilibert.json'
+    )
+
+    const { totalContributions } = await responseContribu.json()
+    const repositories = await response.json()
+
+    return {
+      props: { repositories: repositories.length, totalContributions },
     }
-  )
-
-  const responseContribu = await fetch(
-    'https://github-contributions-api.deno.dev/danielcgilibert.json'
-  )
-
-  const { totalContributions } = await responseContribu.json()
-  const repositories = await response.json()
-  return {
-    props: { repositories: repositories.length, totalContributions },
+  } catch (error) {
+    console.log(error)
   }
 }

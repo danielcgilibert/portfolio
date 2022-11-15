@@ -1,7 +1,6 @@
 import { Box, Container } from '@chakra-ui/react'
 import Head from 'next/head'
 import React from 'react'
-import { AnalyticsWrapper } from '../analytics'
 import { Navbar } from '../ui/navbar'
 
 export const Layout = ({ children, title }) => {

@@ -22,7 +22,6 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react'
-import styled from '@emotion/styled'
 import Link from 'next/link'
 import React from 'react'
 import {
@@ -38,15 +37,14 @@ export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const bgColor = useColorModeValue('colors.200', 'colors.900')
   const color = useColorModeValue('colors.900', 'colors.100')
-  const LogoBox = styled.div`
-    & > p > div {
-      transition: 200ms ease;
-      display: inline-block;
-    }
-    &:hover > p > div {
-      transform: rotate(60deg);
-    }
-  `
+  // const LogoBox = styled.div`
+  //   &span {
+  //     transition: 200ms ease;
+  //   }
+  //   &:hover > span {
+  //     transform: rotate(20deg);
+  //   }
+  // `
   return (
     <>
       <Box
@@ -67,11 +65,11 @@ export const Navbar = () => {
           alignItems="center"
           justifyContent="space-between">
           <Link href="/">
-            <LogoBox>
+            <>
               <Text fontSize="xl">
-                <div> 👋 </div> Daniel
+                <span> 👋 </span> Daniel
               </Text>
-            </LogoBox>
+            </>
           </Link>
 
           <Stack direction={'row'} spacing={3}>
