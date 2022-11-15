@@ -1,8 +1,8 @@
 import { ChakraProvider, useColorMode } from '@chakra-ui/react'
 import { css, Global } from '@emotion/react'
+import '../styles/globals.css'
 import theme from '../theme'
 import { prismDarkTheme, prismLightTheme } from '../theme/prism'
-
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()
 

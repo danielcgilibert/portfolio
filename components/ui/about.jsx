@@ -15,11 +15,12 @@ export const About = () => {
   return (
     <Box as="section">
       <TitleSection title="Sobre Mi" />
+
       <Stack spacing="2">
         <Text
           css={{
             '&::first-letter': {
-              marginLeft: '13px',
+              // marginLeft: '8px',
               fontSize: '1.4rem',
             },
           }}

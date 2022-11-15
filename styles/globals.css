@@ -1,5 +1,9 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  /* background: rgb(29, 29, 28) !important;
+  background: radial-gradient(
+    circle,
+    rgb(21, 19, 16) 5%,
+    rgba(29, 28, 27, 1) 100%
+  ) !important; */
 }

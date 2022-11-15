@@ -14,14 +14,14 @@ export const Bio = () => {
             <Box fontWeight="bold" as="span" mr="4">
               2021 - 2022
             </Box>
-            Bengala Spain
+            Quidem, ipsam eum fugit earum
           </ListItem>
           <ListItem>
             <ListIcon as={CalendarIcon} color="green.200" />
             <Box fontWeight="bold" as="span" mr="4">
               2021 - 2022
             </Box>
-            Accenture
+            Quidem, ipsam eum fugit earum
           </ListItem>
           <ListItem>
             <ListIcon as={CalendarIcon} color="green.200" />
