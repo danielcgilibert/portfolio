@@ -14,6 +14,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.13",
+    "@vercel/analytics": "^0.1.5",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
     "framer-motion": "^6",
