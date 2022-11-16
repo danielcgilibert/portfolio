@@ -16,7 +16,7 @@
     "@fontsource/open-sans": "^4.5.13",
     "@vercel/analytics": "^0.1.5",
     "eslint": "8.27.0",
-    "eslint-config-next": "13.0.2",
+    "eslint-config-next": "13.0.3",
     "framer-motion": "^6",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
