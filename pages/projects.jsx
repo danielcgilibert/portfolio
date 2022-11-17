@@ -32,18 +32,20 @@ export default function ProjectsPage() {
             <CardProject key={project.name} project={project} />
           ))}
         </Grid>
-        <Flex
-          rounded="lg"
-          py="3"
-          bg={bgColor}
-          mt="5"
-          gap="2"
-          justifyContent="center">
-          <Icon as={AiFillGithub} w={6} h={6} />
-          <Link href="https://chakra-ui.com" isExternal>
+        <Link href="https://chakra-ui.com" isExternal>
+          <Flex
+            rounded="lg"
+            transition="transform .25s ease"
+            _hover={{ transform: 'scale(1.07)' }}
+            py="3"
+            bg={bgColor}
+            mt="5"
+            gap="2"
+            justifyContent="center">
+            <Icon as={AiFillGithub} w={6} h={6} />
             Más proyectos en GitHub
-          </Link>
-        </Flex>
+          </Flex>
+        </Link>
       </SlideFade>
     </Layout>
   )
