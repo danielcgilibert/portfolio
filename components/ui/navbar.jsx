@@ -11,6 +11,7 @@ import {
   Container,
   Divider,
   Icon,
+  keyframes,
   Link as LinkChakra,
   Menu,
   MenuButton,
@@ -22,6 +23,7 @@ import {
   useColorModeValue,
   useDisclosure,
 } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
 import {
@@ -32,24 +34,27 @@ import {
   AiFillProject,
 } from 'react-icons/ai'
 
+const animationKeyframes = keyframes`
+0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }`
+
+const animation = `${animationKeyframes} 3s ease-in-out infinite`
 export const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const bgColor = useColorModeValue('colors.200', 'colors.900')
   const color = useColorModeValue('colors.900', 'colors.100')
-  // const LogoBox = styled.div`
-  //   &span {
-  //     transition: 200ms ease;
-  //   }
-  //   &:hover > span {
-  //     transform: rotate(20deg);
-  //   }
-  // `
+
   return (
     <>
       <Box
         position="fixed"
-        as="nav"
         w="100%"
         mx={'auto'}
         css={{ backdropFilter: 'blur(20px)' }}
@@ -65,11 +70,16 @@ export const Navbar = () => {
           alignItems="center"
           justifyContent="space-between">
           <Link href="/">
-            <>
-              <Text fontSize="xl">
-                <span> 👋 </span> Daniel
-              </Text>
-            </>
+            <Text fontSize="xl">
+              <Box
+                as={motion.span}
+                mr="2"
+                display="inline-flex"
+                animation={animation}>
+                👋
+              </Box>
+              Daniel
+            </Text>
           </Link>
 
           <Stack direction={'row'} spacing={3}>

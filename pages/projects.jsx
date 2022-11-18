@@ -10,6 +10,7 @@ import {
 import React from 'react'
 import { AiFillGithub } from 'react-icons/ai'
 import { Layout } from '../components/layouts/layout'
+import Show from '../components/motions/show'
 import { CardProject } from '../components/ui/card-project'
 import { TitleSection } from '../components/ui/title-section'
 import { projects } from '../db/projects'
@@ -28,8 +29,12 @@ export default function ProjectsPage() {
           gap="4"
           placeItems="center"
           alignContent="center">
-          {projects.map(project => (
-            <CardProject key={project.name} project={project} />
+          {projects.map((project, index) => (
+            <>
+              <Show delay={index / 4}>
+                <CardProject key={project.name} project={project} />
+              </Show>
+            </>
           ))}
         </Grid>
         <Link href="https://chakra-ui.com" isExternal>
