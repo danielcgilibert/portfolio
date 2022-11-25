@@ -50,10 +50,11 @@ export const CardProject = ({
 
             <Link
               sx={{ display: 'flex', gap: '5px' }}
+              opacity={hrefWeb ? '1' : '0.2'}
               href={hrefWeb}
-              isExternal>
-              <Text>Web</Text>
-
+              isExternal
+              pointerEvents={hrefWeb ? 'inherit' : 'none'}>
+              {hrefWeb ? <Text>Web</Text> : <Text>Sin web</Text>}
               <Icon as={AiOutlineLink} w={6} h={6} color="colors.100" />
             </Link>
           </Flex>

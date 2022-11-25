@@ -16,7 +16,7 @@ export const About = () => {
     <Box as="section">
       <TitleSection title="Sobre Mi" />
 
-      <Stack spacing="2">
+      <Stack spacing="6">
         <Text
           css={{
             '&::first-letter': {
@@ -37,7 +37,7 @@ export const About = () => {
           Si quieres contactarme, háblame por{' '}
           <LinkChakra
             color="colors.100"
-            href="https://www.google.com"
+            href="https://es.linkedin.com/in/danielcarmonagilibert"
             fontWeight="bold"
             isExternal>
             LinkedIn

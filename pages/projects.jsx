@@ -37,7 +37,7 @@ export default function ProjectsPage() {
             </>
           ))}
         </Grid>
-        <Link href="https://chakra-ui.com" isExternal>
+        <Link href="https://github.com/danielcgilibert" isExternal>
           <Flex
             rounded="lg"
             transition="transform .25s ease"

@@ -11,7 +11,7 @@ export const Social = () => {
       <Stack spacing="1" ml={{ base: '5', md: '0' }} color="colors.100">
         <List spacing={3}>
           <ListItem>
-            <Link href="https://chakra-ui.com" isExternal>
+            <Link href="https://github.com/danielcgilibert" isExternal>
               <Button
                 w="25%"
                 bg="transparent"
@@ -21,7 +21,9 @@ export const Social = () => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://chakra-ui.com" isExternal>
+            <Link
+              href="https://es.linkedin.com/in/danielcarmonagilibert"
+              isExternal>
               <Button
                 w="25%"
                 textUnderlineOffset="2"
