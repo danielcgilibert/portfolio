@@ -17,7 +17,7 @@
     "@next/bundle-analyzer": "^13.0.5",
     "@vercel/analytics": "^0.1.5",
     "eslint": "8.28.0",
-    "eslint-config-next": "13.0.4",
+    "eslint-config-next": "13.0.5",
     "framer-motion": "^6",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
