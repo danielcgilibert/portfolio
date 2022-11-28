@@ -57,6 +57,7 @@ export const Navbar = () => {
         position="fixed"
         w="100%"
         mx={'auto'}
+        as="nav"
         css={{ backdropFilter: 'blur(20px)' }}
         zIndex={2}
         pt="5px"

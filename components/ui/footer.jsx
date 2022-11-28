@@ -3,8 +3,18 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <Box textAlign="center" as="footer" maxW="container.md" w="100%" mt="5">
-      <Text fontSize="md">Create by danielcg</Text>
+    <Box
+      textAlign="center"
+      as="footer"
+      mt="3rem"
+      maxW="container.sm"
+      borderTop="2px"
+      borderColor="colors.700"
+      p="25px"
+      color="colors.500"
+      opacity="70%"
+      mx={{ base: '20px', md: 'auto' }}>
+      <Text fontSize="md">© Daniel 2022</Text>
     </Box>
   )
 }

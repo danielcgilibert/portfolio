@@ -16,7 +16,7 @@ export const About = () => {
     <Box as="section">
       <TitleSection title="Sobre Mi" />
 
-      <Stack spacing="6">
+      <Stack spacing="6" textAlign="left" sx={{ wordSpacing: 3 }}>
         <Text
           css={{
             '&::first-letter': {
@@ -24,16 +24,15 @@ export const About = () => {
               fontSize: '1.4rem',
             },
           }}
-          fontSize="lg"
-          align="justify">
+          fontSize="lg">
           Siempre interesado en seguir desarrollando en este apasionante mundo
           del desarrollo.
         </Text>
-        <Text fontSize="lg" align="justify">
+        <Text fontSize="lg">
           Enfocado en las últimas tecnologías como React, NextJS, Docker,
           NodeJS...
         </Text>
-        <Text fontSize="lg" align="justify">
+        <Text fontSize="lg">
           Si quieres contactarme, háblame por{' '}
           <LinkChakra
             color="colors.100"
