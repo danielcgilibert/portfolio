@@ -114,7 +114,7 @@ export const Navbar = () => {
                     )}
                   </MenuButton>
 
-                  <MenuList bgColor={bgColor} alignItems={'center'}>
+                  <MenuList alignItems={'center'}>
                     <Link href="/">
                       <MenuItem flex gap="2">
                         <Icon as={AiFillHome} color="colors.100" />

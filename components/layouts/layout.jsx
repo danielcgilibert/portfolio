@@ -10,6 +10,12 @@ export const Layout = ({ children, title }) => {
       <Head>
         <title>{`${title} - portfolio`}</title>
         <meta name="description" content="portfolio daniel" />
+        <meta
+          name="keywords"
+          content="HTML, CSS, JavaScript, ReactJS, NextJS"
+        />
+        <meta name="author" content="Daniel Carmona Gilibert" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
