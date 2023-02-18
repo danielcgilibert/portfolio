@@ -14,28 +14,21 @@ export const Bio = () => {
             <Box fontWeight="bold" as="span" mr="4">
               2021 - 2022
             </Box>
-            Quidem, ipsam eum fugit earum
+            Desarrollador Front-End en Bengala Spain
           </ListItem>
           <ListItem>
             <ListIcon as={CalendarIcon} color="green.200" />
             <Box fontWeight="bold" as="span" mr="4">
-              2021 - 2022
+              2021 - 2021
             </Box>
-            Quidem, ipsam eum fugit earum
+            Desarrollador Back-End en Acrono Sistemas Inteligentes SL
           </ListItem>
           <ListItem>
             <ListIcon as={CalendarIcon} color="green.200" />
             <Box fontWeight="bold" as="span" mr="4">
-              2016 - 2022
+              2019 - 2019
             </Box>
-            Quidem, ipsam eum fugit earum
-          </ListItem>
-          <ListItem>
-            <ListIcon as={CalendarIcon} color="green.200" />
-            <Box fontWeight="bold" as="span" mr="4">
-              2018 - 2019
-            </Box>
-            Quidem, ipsam illum quis sed voluptatum quae eum fugit
+            Help Desk en Accenture
           </ListItem>
         </List>
       </Stack>

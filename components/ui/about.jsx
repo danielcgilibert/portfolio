@@ -16,7 +16,7 @@ export const About = () => {
     <Box as="section">
       <TitleSection title="Sobre Mi" />
 
-      <Stack spacing="6" textAlign="left" sx={{ wordSpacing: 3 }}>
+      <Stack spacing="6" textAlign="left" sx={{ wordSpacing: 1 }}>
         <Text
           css={{
             '&::first-letter': {

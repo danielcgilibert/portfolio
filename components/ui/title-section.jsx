@@ -4,6 +4,7 @@ import React from 'react'
 export const TitleSection = ({ title }) => {
   return (
     <Text
+      as="h1"
       fontSize="2xl"
       textDecoration="underline"
       mb="20px"
