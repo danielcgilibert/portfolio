@@ -14,7 +14,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.13",
-    "@next/bundle-analyzer": "^13.0.6",
+    "@next/bundle-analyzer": "^13.2.4",
     "eslint": "8.33.0",
     "@vercel/analytics": "^0.1.8",
     "eslint-config-next": "13.0.5",
