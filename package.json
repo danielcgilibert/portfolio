@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@fontsource/open-sans": "^4.5.13",
+    "@fontsource/open-sans": "^4.5.14",
     "@next/bundle-analyzer": "^13.2.4",
     "eslint-config-next": "13.2.4",
     "eslint": "8.36.0",
