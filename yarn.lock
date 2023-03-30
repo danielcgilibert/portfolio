@@ -1030,10 +1030,10 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.37.0.tgz#cf1b5fa24217fe007f6487a26d765274925efa7d"
   integrity sha512-x5vzdtOOGgFVDCUs81QRB2+liax8rFg3+7hqM+QhBG0/G3F1ZsoYl97UrqgHgQ9KKT7G6c4V+aTUCgu/n22v1A==
 
-"@fontsource/open-sans@^4.5.13":
-  version "4.5.13"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.13.tgz#2c99e4c055d129a75f14c11b77d040282e0388b8"
-  integrity sha512-/UzqP7ZFk145XAq8KG4pvFPP7UQhtreDGXgqXZjagCDreKxcrhwn/x7DYz9rPcycWkLUVApIybcoczGZiM0cRg==
+"@fontsource/open-sans@^4.5.14":
+  version "4.5.14"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.14.tgz#b3e1665c0b3fdfc1f030ded2843749e3cf3a5900"
+  integrity sha512-mBXIIETBlW8q/ocuUN0hyGow2iuf75hQEHQt8R/RJ/HcphVbLg8KB7pHYGbFGDqs75W+SWvTC7JkVeAjT65BuQ==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
